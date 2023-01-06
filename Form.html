@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<!-- Head Section Content -->
+<head>
+    <!-- Page title -->
+    <title>Payroll form</title>
+    <link rel="stylesheet" href="Employee.css">
+
+</head>
+ 
+<!-- Body Section Content -->
+<body>
+ 
+    <!-- Heading Content -->
+    <img src="BL_logo_square_jpg.jpg" width="100" alt="Company Logo">
+    <h1> Employee Payroll</h1>
+    <p>The future is here</p>
+ 
+    <h3>Employee Wage</h3>
+ 
+    <!-- Creating a from -->
+    <form action="#">
+        <fieldset>
+            <legend>Personal Details</legend>
+ 
+            <!-- Label and input field -->
+            <div class="row-content">
+                <label for="pwd">First Name:</label>
+                <input type="name" id="pwd" name="pwd"
+                pattern="^[A-Z]{1}[A-Za-z]{2,}$"
+                title="The name must start with Capital letter">
+        
+
+            </div>
+                
+            <p id="email">
+                <label for="email">Email:</label>
+                <input type="email" id="pwd" name="pwd"
+                pattern="([a-z0-9]{3,}(.)[a-z0-9]{3,}(@)[a-z{4,}(.)[a-z]{2,}]"
+                title="Error examble abc.ab@gmail.com">
+                
+            </p>
+
+            <p id="mob">
+                <label for="mob">Phone Number:</label>
+                <input type="mob" id="pwd" name="pwd"
+                pattern="[0-9]{1,2}( )[0-9]{10}"
+                title="Error 91 8989898989">
+                
+            </p>
+           
+            <!-- Label and radio button field -->
+            <p id="pass">
+                <label for="pwd">Password:</label>
+                <input type="password" id="pwd" name="pwd"
+                pattern="(?=.*[A-Z])(?=.*[0-9])(?=.{8,}$)[a-zA-Z0-9]*[@#$%^&-+=()][a-zA-Z0-9]*"
+                title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters">
+                
+            </p>
+
+ 
+            <!-- Creating a button -->
+            <p>
+                <button type="cancel" class="btn">Cancel</button>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </p>
+
+            
+        </fieldset>
+    </form>
+    
+</body>
+ 
+</html>
